@@ -1,0 +1,4 @@
+# E6 - Warm touch (visite de profil déclenchée)
+targets:
+  - {linkedin: "https://www.linkedin.com/in/camille-lefevre-demo", country: FR}
+  - {linkedin: "thomas-mercier-demo", country: FR}
