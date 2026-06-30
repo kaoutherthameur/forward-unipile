@@ -1,0 +1,4 @@
+# F1 - Inbox LinkedIn unifiée
+limit_chats: 20
+messages_per_chat: 10
+output_path: examples/inbox.md

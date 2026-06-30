@@ -1,0 +1,4 @@
+# F4 - Agir sur un message
+message_id: "MESSAGE_ID_DEMO"
+action: react   # react | edit | delete | forward
+value: "👍"     # emoji (react) | nouveau texte (edit) | chat_id (forward)

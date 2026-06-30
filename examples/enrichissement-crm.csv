@@ -1,0 +1,3 @@
+name,headline,location,country,network_distance,follower_count,email,company,company_industry,public_identifier
+Camille Lefevre,Fondatrice @ Atelier Data,Lyon,FR,SECOND_DEGREE,6085,camille@atelier-data-demo.fr,Atelier Data,Conseil,camille-lefevre-demo
+Thomas Mercier,CEO @ Northwind,,FR,THIRD_DEGREE,3421,,,,thomas-mercier-demo
