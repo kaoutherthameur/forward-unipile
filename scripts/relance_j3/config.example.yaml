@@ -1,0 +1,8 @@
+# B3 - Relance J+3 des sans-réponse
+our_provider_id: "ACoAA_your_own_provider_id"   # pour ignorer vos propres messages
+# Leads contactés : en prod, alimentés par votre base (chat_id + date du 1er contact).
+leads:
+  - chat_id: "CHAT_DEMO_1"
+    contacted_at: "2026-06-26T09:00:00Z"
+    country: FR
+    message: "Je reviens vers toi - ce sont des sujets que tu as commencé à creuser ?"
