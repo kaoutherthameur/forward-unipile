@@ -1,0 +1,5 @@
+# D5 - Veille de contenu concurrent / influenceur
+identifier: colindargent   # public_identifier LinkedIn du profil à surveiller
+days_window: 30
+max_posts: 30
+output_path: examples/veille-concurrent.md
