@@ -1,0 +1,5 @@
+httpx>=0.27
+python-dotenv>=1.0
+pyyaml>=6.0
+# Optional, only for hosted workflow scripts (webhook / cron):
+modal>=0.64
