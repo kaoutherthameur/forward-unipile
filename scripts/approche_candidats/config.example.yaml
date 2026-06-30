@@ -1,0 +1,6 @@
+# C3 - Approche candidats
+use_inmail: false   # true = InMail Recruiter (hors réseau) ; false = invitation + note
+note_template: "Bonjour {first_name}, on recrute un {role} chez Atelier Data, votre profil m'a marqué. Ouvert à en parler ?"
+candidates:
+  - {linkedin: "https://www.linkedin.com/in/yanis-bouchard-demo", first_name: "Yanis", role: "Data Engineer", country: FR}
+  - {linkedin: "manon-petit-demo", first_name: "Manon", role: "Data Engineer", country: FR}

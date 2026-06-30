@@ -1,0 +1,3 @@
+# C5 - Pipeline d'une offre
+job_id: "JOB_ID_DEMO"
+output_path: examples/pipeline-offre.csv

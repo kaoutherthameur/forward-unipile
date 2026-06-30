@@ -1,0 +1,3 @@
+# B6 - Auto-accepter les invitations + bienvenue
+send_welcome: true
+welcome_template: "Merci pour la connexion {first_name} ! Ravi d'échanger sur l'IA appliquée aux PME."
