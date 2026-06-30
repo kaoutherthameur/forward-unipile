@@ -1,0 +1,5 @@
+# A5 - Social listening (posts par mot-clé)
+api: classic
+keywords: "graphe d'activités PME"
+limit: 50
+output_path: examples/social-listening.csv

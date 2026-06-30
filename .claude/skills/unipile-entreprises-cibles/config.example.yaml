@@ -1,0 +1,12 @@
+# A3 - Entreprises cibles (ABM)
+search_url:
+filters:
+  api: sales_navigator   # ou classic
+  category: companies
+  keywords: "conseil"
+  industry: {include: [], exclude: []}
+  headcount:
+    - {min: 11, max: 200}
+  location: []
+limit: 100
+output_path: examples/entreprises-cibles.csv

@@ -1,0 +1,4 @@
+# D2 - Commenter / répondre sur un post
+post_url: https://www.linkedin.com/feed/update/urn:li:activity:7457342077836767232/
+text: "Très juste, la structuration de la donnée est souvent le vrai goulot."
+reply_to_comment_id:   # vide = commentaire top-level ; sinon répond à ce comment

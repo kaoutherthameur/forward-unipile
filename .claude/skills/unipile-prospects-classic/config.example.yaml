@@ -1,0 +1,10 @@
+# A2 - Prospects via recherche Classic
+search_url:
+filters:
+  api: classic
+  category: people
+  keywords: "head of operations"
+  network_distance: [2, 3]
+  location: []
+limit: 100
+output_path: examples/prospects-classic.csv
