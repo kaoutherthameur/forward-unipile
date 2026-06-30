@@ -184,6 +184,8 @@ forward-unipile/
 - **Skills MCP** : `SKILL.md` qui décrit le cas + pilote les tools du MCP Unipile (config légère). Pas de `run.py` nécessaire.
 - **Scripts workflow** : Python via REST (`lib/unipile_helpers.py`), déployables Modal (cron/webhook), avec garde-fous anti-ban intégrés (S2). Réutilise les patterns prouvés de `forward-graph`.
 
-## Prochaine étape
+## Statut d'implémentation
 
-`/dev-scope` pour produire la spec du repo : valider la capacité d'écriture du MCP (cf. hypothèse), figer le contrat des skills/scripts, lister les briques `lib`, et planifier l'implémentation incrémentale (commencer par les ressources déjà prouvées en prod).
+**Les 38 cas d'usage sont implémentés** dans ce repo (vague 1 + vague 2, 2026-06-30) : 19 skills 🟢 + 20 scripts 🔵 (39 ressources, socle S1 fusionné dans `unipile-connecter-comptes`, S2 = `lib`, S3 = `unipile-raw-voyager`).
+
+Index complet des ressources : voir [`README.md`](README.md). Toutes les écritures tournent en `DRY_RUN` par défaut ; validation live à faire avec un compte réel.
