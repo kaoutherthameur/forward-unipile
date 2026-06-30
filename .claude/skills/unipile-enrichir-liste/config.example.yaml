@@ -1,0 +1,4 @@
+# A6 - Enrichir une liste de prospects
+input_path: .claude/skills/unipile-enrichir-liste/input.example.csv
+output_path: examples/enrichir-liste.csv
+notify: false   # true = déclenche une visite de profil visible par la cible
