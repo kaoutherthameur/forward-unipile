@@ -1,0 +1,15 @@
+# A1 - Prospects via Sales Navigator
+# Option A : coller une URL de recherche Sales Nav
+search_url:
+# Option B : filtres structurés (ignoré si search_url est rempli)
+filters:
+  api: sales_navigator
+  category: people
+  keywords: "head of operations"
+  seniority_level: ["Director", "VP"]
+  company_headcount:
+    - {min: 11, max: 200}
+  location: []        # IDs géographiques (voir GET /linkedin/search/parameters)
+  changed_jobs: false
+limit: 100
+output_path: examples/prospects-salesnav.csv
