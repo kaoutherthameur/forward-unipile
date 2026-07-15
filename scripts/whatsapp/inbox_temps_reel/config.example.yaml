@@ -1,0 +1,6 @@
+# A1 - Inbox WhatsApp temps réel -> notification Slack/CRM
+# Évènement : message_received. notify() est un stub à câbler.
+# Les messages sortants (les vôtres) sont filtrés via UNIPILE_OWN_PROVIDER_IDS (env, séparés par des virgules).
+# Ex. UNIPILE_OWN_PROVIDER_IDS="33612345678@s.whatsapp.net"
+# Lecture seule : aucun envoi WhatsApp, seulement une notification interne.
+canal_notification: slack        # cible logique de notify() (slack | crm | autre) - purement indicatif

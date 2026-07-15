@@ -1,0 +1,8 @@
+# E6 - Transcription des notes vocales WhatsApp (webhook message_received)
+# extract_audio() détecte un attachment type=audio -> transcribe() (STT) -> summarize() (LLM)
+# -> deliver_to_coach() livre le résumé au coach (stub).
+# LECTURE + traitement : pas d'envoi WhatsApp ici (la livraison va vers le coach, pas le coaché).
+# Messages sortants filtrés via UNIPILE_OWN_PROVIDER_IDS (env).
+
+# transcribe() et summarize() sont des stubs déterministes -> remplacer par STT + LLM.
+signature: "Ton coach"   # non utilisé ici, présent pour cohérence de config

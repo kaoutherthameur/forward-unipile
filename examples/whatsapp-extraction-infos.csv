@@ -1,0 +1,7 @@
+contact,type_info,valeur,source_message,date
+Camille Lefevre,adresse,"12 rue des Lilas, 75011 Paris","Tu peux livrer au 12 rue des Lilas, 75011 Paris",2026-07-08
+Camille Lefevre,montant,3500 EUR,"Pour le stand je pars sur 3 500 EUR max",2026-07-08
+Thomas Mercier,date_rdv,2026-07-18 14:00,"On se cale jeudi 18 à 14h alors ?",2026-07-12
+Thomas Mercier,reference,Commande #1042,"Ma commande #1042 est-elle partie ?",2026-07-11
+Sofia Nguyen,coordonnees,sofia.nguyen@example.org,"Mon mail pro c'est sofia.nguyen@example.org",2026-07-09
+Sofia Nguyen,montant,490 EUR,"Le devis est à 490 EUR TTC",2026-07-09

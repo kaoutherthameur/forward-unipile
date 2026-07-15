@@ -1,0 +1,9 @@
+# A4 - Accusé de réception auto hors heures d'ouverture
+# Évènement : message_received. Si le message arrive HORS de la fenêtre horaire
+# (u.in_send_window(pays) renvoie False), envoi auto d'un accusé de réception.
+# ÉCRITURE : send_ack() envoie sur le fil. Simulé par défaut (UNIPILE_DRY_RUN=1).
+# Fenêtre horaire = [07:30, 19:30] locale (lib/unipile_helpers.py, non modifiable ici).
+# Réglages via env : UNIPILE_SEND_COUNTRY (défaut FR), WHATSAPP_ACK_TEXT (texte de l'accusé),
+# UNIPILE_OWN_PROVIDER_IDS (filtrage des messages sortants).
+pays: FR                         # indicatif (le webhook lit UNIPILE_SEND_COUNTRY)
+texte_accuse: "Bien reçu, merci pour votre message. On revient vers vous sous 2h ouvrées."

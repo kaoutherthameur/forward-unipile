@@ -1,0 +1,9 @@
+# G3 - Tâches auto depuis WhatsApp
+# Sujets fictifs, aucune donnée privée réelle.
+
+# Vos provider_id WhatsApp (pour ignorer vos propres messages sortants),
+# séparés par des virgules. En déploiement, les passer via la variable
+# d'environnement UNIPILE_OWN_PROVIDER_IDS (secret Modal).
+own_provider_ids: "33600000009@s.whatsapp.net"
+# Où créer la tâche (à câbler dans create_task()) : Notion, tasks.md, Todoist...
+task_target: "notion://database/XXXXXXXX"

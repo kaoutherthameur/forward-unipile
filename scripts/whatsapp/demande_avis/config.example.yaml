@@ -1,0 +1,22 @@
+# C4 - Demande d'avis après une prestation (WhatsApp)
+# Compte WhatsApp PERSO connecté à Unipile (QR). Envoi opt-in : le client vient
+# d'être livré et connaît déjà l'échange.
+# delay_days : nombre de jours après la prestation avant de demander l'avis.
+# review_link : lien d'avis Google par défaut (injecté via {lien} dans le message).
+# Idempotence : clé (chat_id, avis). already_sent liste les clés déjà émises.
+# En prod, les prestations sont alimentées par votre agenda / CRM.
+delay_days: 3
+review_link: "https://g.page/r/exemple-avis-fictif/review"
+prestations:
+  - chat_id: "CHAT_DEMO_AVIS_1"
+    country: FR
+    done_at: "2026-07-12T06:00:00Z"     # prestation il y a ~3 jours -> éligible
+    message: "Bonjour Nadia, merci pour votre confiance ! Si vous avez 30 secondes, un petit avis m'aiderait beaucoup : {lien}"
+  - chat_id: "CHAT_DEMO_AVIS_2"
+    country: FR
+    done_at: "2026-07-14T11:00:00Z"     # hier -> pas encore éligible
+    message: "Bonjour Karim, ravi que la prestation vous ait plu. Un avis Google me ferait très plaisir : {lien}"
+    review_link: "https://g.page/r/autre-exemple-fictif/review"
+
+# Clés déjà envoyées (exemple : rien pour l'instant).
+already_sent: []

@@ -1,0 +1,17 @@
+# G4 - Inbox unifiée multi-canal
+# Sujets fictifs, aucune donnée privée réelle.
+
+# Canaux à inclure. Laisser la liste vide pour prendre tous les comptes connectés.
+channels:
+  - whatsapp
+  - linkedin
+  - instagram
+  - email
+# Conversations lues par canal.
+limit_chats: 20
+# Messages récents par conversation.
+messages_per_chat: 5
+# Si true, ne garder que les non-lues / à répondre.
+unread_only: false
+# Note markdown de sortie.
+output_path: examples/whatsapp-inbox-unifiee.md
