@@ -1,0 +1,15 @@
+# G1 - Recherche dans l'historique WhatsApp
+# Sujets fictifs, aucune donnée privée réelle.
+
+# Ce que vous cherchez, en langage naturel.
+query: "le budget que Camille a mentionné pour le salon"
+# Facultatif : limiter à un contact (nom affiché ou provider_id). Laisser vide pour tout balayer.
+contact_filter: "Camille Lefevre"
+# Combien de conversations balayer.
+limit_chats: 50
+# Profondeur d'historique par conversation.
+messages_per_chat: 200
+# Messages voisins conservés autour de chaque correspondance (contexte).
+context_window: 2
+# Note markdown de sortie.
+output_path: examples/whatsapp-recherche-historique.md

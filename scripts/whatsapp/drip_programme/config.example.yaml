@@ -1,0 +1,39 @@
+# E3 - Drip d'un programme de coaching WhatsApp (un module par jour)
+# Chaque jour (cron), module_for_day() calcule le module dû selon start_at du coaché.
+# ÉCRITURE : simulée par défaut (UNIPILE_DRY_RUN=1). Garde-fous plafond + fenêtre locale + jitter.
+# Idempotence sur (coaché, jour) via state_path (journal local des envois).
+
+state_path: ".tmp/drip_programme_sent.json"   # journal d'idempotence (non commité)
+
+# Programme fictif "Décollage 5 jours". Jour 1 = index 0.
+modules:
+  - jour: 1
+    titre: "Jour 1 - Clarifier ta cible"
+    texte: "Écris en une phrase la personne que tu veux aider. Réponds-moi avec ta phrase."
+    attachment_url: ""                        # ex : "https://exemple.test/j1-fiche.pdf"
+  - jour: 2
+    titre: "Jour 2 - Ton offre en 3 lignes"
+    texte: "Décris ce que tu proposes, à qui, et le résultat promis. 3 lignes max."
+    attachment_url: ""
+  - jour: 3
+    titre: "Jour 3 - 5 prospects tièdes"
+    texte: "Liste 5 personnes que tu peux contacter cette semaine. Envoie-moi la liste."
+    attachment_url: ""
+  - jour: 4
+    titre: "Jour 4 - Ton premier message"
+    texte: "Rédige un message d'approche court et humain. Colle-le ici, je te fais un retour."
+    attachment_url: ""
+  - jour: 5
+    titre: "Jour 5 - Passe à l'action"
+    texte: "Envoie tes 5 messages aujourd'hui. Dis-moi quand c'est parti."
+    attachment_url: ""
+
+coaches:
+  - prenom: "Camille"
+    chat_id: "c-3001"
+    country: "FR"
+    start_at: "2026-07-14"    # démarrage -> jour 1 ce jour-là
+  - prenom: "Thomas"
+    chat_id: "c-3002"
+    country: "FR"
+    start_at: "2026-07-11"    # démarré il y a quelques jours -> module plus avancé

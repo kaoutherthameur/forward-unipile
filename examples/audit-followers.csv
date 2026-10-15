@@ -1,0 +1,4 @@
+name,headline,profile_url,is_follower,is_following
+Camille Lefevre,Fondatrice @ Atelier Data,https://www.linkedin.com/in/camille-lefevre-demo,True,True
+Thomas Mercier,CEO @ Northwind Studio,https://www.linkedin.com/in/thomas-mercier-demo,True,False
+Sofia Nguyen,Head of Ops @ Brightpath,https://www.linkedin.com/in/sofia-nguyen-demo,False,True

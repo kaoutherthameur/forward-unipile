@@ -1,0 +1,6 @@
+name,headline,engagement_type,reaction_value,comment_preview,network_distance,profile_url
+Camille Lefevre,"Fondatrice @ Atelier Data | J'aide les PME a structurer leur donnee",reaction,INTEREST,,FIRST_DEGREE,https://www.linkedin.com/in/camille-lefevre-demo
+Thomas Mercier,"CEO @ Northwind Studio | Automatisation & IA pour cabinets de conseil",reaction,LIKE,,FIRST_DEGREE,https://www.linkedin.com/in/thomas-mercier-demo
+Sofia Nguyen,"Head of Ops @ Brightpath | Scaling B2B SaaS",reaction,LIKE,,SECOND_DEGREE,https://www.linkedin.com/in/sofia-nguyen-demo
+Adrien Roux,"Consultant operations | Je construis les outils internes des boites qui scalent",comment,,"Avec l'ere de l'IA, la donnee devient le carburant. Structurer ces flux, c'est le nerf de la guerre.",FIRST_DEGREE,https://www.linkedin.com/in/adrien-roux-demo
+Lea Fontaine,"Founder @ Sitewave | Landing pages generees par IA",comment,,"Des qu'on relie les evenements entre eux plutot que de les stocker isoles, le pilotage change.",FIRST_DEGREE,https://www.linkedin.com/in/lea-fontaine-demo

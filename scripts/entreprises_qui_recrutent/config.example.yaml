@@ -1,0 +1,6 @@
+# C2 - Entreprises qui recrutent un poste cible
+api: classic            # classic | sales_navigator
+keywords: "automation AI builder"
+location: []            # IDs géographiques (voir GET /linkedin/search/parameters)
+limit: 50
+output_path: examples/entreprises-qui-recrutent.csv

@@ -1,0 +1,24 @@
+# C2 - Relance douce d'un devis / d'une facture sans réponse (WhatsApp)
+# Compte WhatsApp PERSO connecté à Unipile (QR). Envoi opt-in : le contact vous
+# a demandé un devis, la relance reste dans un fil existant.
+# Paliers : jours après l'envoi où l'on relance (une seule fois par palier).
+# Idempotence : clé (chat_id, palier). already_sent liste les clés déjà émises.
+# En prod, les devis sont alimentés par votre outil de facturation / CRM.
+quotes:
+  - chat_id: "CHAT_DEMO_DEVIS_1"
+    country: FR
+    sent_at: "2026-07-11T09:00:00Z"     # devis envoyé il y a 4 jours -> palier J+4
+    paliers: [4, 8]
+    messages:
+      "J+4": "Bonjour Thomas, avez-vous pu regarder le devis ? Je reste dispo si une ligne mérite d'être ajustée."
+      "J+8": "Bonjour Thomas, je me permets un dernier point sur le devis. Faut-il qu'on en rediscute de vive voix ?"
+  - chat_id: "CHAT_DEMO_DEVIS_2"
+    country: CH
+    sent_at: "2026-07-14T10:00:00Z"     # envoyé hier, aucun palier atteint
+    paliers: [4, 8]
+    messages:
+      "J+4": "Bonjour Sophie, un petit mot pour savoir si le devis vous convient."
+      "J+8": "Bonjour Sophie, je reste à votre écoute si vous avez des questions sur le devis."
+
+# Clés déjà envoyées (exemple : rien pour l'instant).
+already_sent: []

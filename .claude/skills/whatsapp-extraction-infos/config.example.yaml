@@ -1,0 +1,18 @@
+# G2 - Extraction d'infos structurées depuis WhatsApp
+# Sujets fictifs, aucune donnée privée réelle.
+
+# Types d'infos à extraire.
+info_types:
+  - adresse
+  - montant
+  - date_rdv
+  - coordonnees
+  - reference
+# Facultatif : CSV de contacts à cibler (voir input.example.csv). Laisser vide pour tout balayer.
+contacts_input: ""
+# Combien de conversations balayer.
+limit_chats: 50
+# Profondeur d'historique par conversation.
+messages_per_chat: 200
+# CSV de sortie.
+output_path: examples/whatsapp-extraction-infos.csv

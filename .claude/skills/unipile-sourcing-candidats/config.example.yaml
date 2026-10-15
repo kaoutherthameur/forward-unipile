@@ -1,0 +1,13 @@
+# C1 - Sourcer des candidats
+search_url:
+filters:
+  api: recruiter          # ou sales_navigator
+  category: people
+  role:
+    keywords: "data engineer"
+    priority: MUST_HAVE
+    scope: CURRENT_OR_PAST
+  skills: []              # IDs de compétences (voir GET /linkedin/search/parameters)
+  location: []
+limit: 100
+output_path: examples/sourcing-candidats.csv

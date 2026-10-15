@@ -1,0 +1,8 @@
+# C4 - Publier / gérer une offre d'emploi
+action: create   # create | publish | close
+job:
+  title: "Builder IA / Automatisation (H/F)"
+  company: "Atelier Data"
+  location: "Lyon, France"
+  description: "Nous cherchons un profil builder pour structurer nos workflows IA..."
+job_id:   # requis pour publish / close

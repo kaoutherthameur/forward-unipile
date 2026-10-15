@@ -1,0 +1,23 @@
+# C1 - Rappel de RDV à J-1 et H-2 (WhatsApp)
+# Compte WhatsApp PERSO connecté à Unipile (QR). Envoi opt-in uniquement :
+# le contact a pris rendez-vous et attend ce rappel.
+# Idempotence : clé (chat_id, étape, jour de l'étape). already_sent liste les
+# clés déjà traitées (en prod : votre base) pour ne pas réémettre un rappel.
+# En prod, les rendez-vous sont alimentés par votre agenda / CRM.
+appointments:
+  - chat_id: "CHAT_DEMO_RDV_1"
+    country: FR
+    starts_at: "2026-07-16T14:00:00Z"   # RDV demain 16h (heure FR)
+    messages:
+      "J-1": "Bonjour Camille, petit rappel : on se voit demain à 16h au salon. À demain !"
+      "H-2": "Bonjour Camille, votre rendez-vous de 16h approche. À tout à l'heure !"
+  - chat_id: "CHAT_DEMO_RDV_2"
+    country: BE
+    starts_at: "2026-07-15T17:30:00Z"   # RDV aujourd'hui, déclenche l'étape H-2
+    messages:
+      "J-1": "Bonjour Léa, rappel : notre créneau est prévu demain à 17h30."
+      "H-2": "Bonjour Léa, on se retrouve dans 2h (17h30). À tout de suite !"
+
+# Clés déjà envoyées (exemple : le rappel J-1 du RDV 1 a déjà été émis hier).
+already_sent:
+  - "CHAT_DEMO_RDV_1|J-1|2026-07-15"

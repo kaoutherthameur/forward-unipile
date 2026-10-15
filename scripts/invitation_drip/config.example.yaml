@@ -1,0 +1,8 @@
+# B1 - Invitation automatique de votre cible
+# note: {first_name} et {company} sont remplacés. Max 300 caractères.
+note_template: "Bonjour {first_name}, je suis vos contenus sur l'IA appliquée aux PME. Au plaisir d'échanger."
+# Cibles : liste de profils (slug ou URL). En vrai, alimentée par une recherche
+# (skill unipile-prospects-salesnav) exportée en CSV.
+targets:
+  - {linkedin: "https://www.linkedin.com/in/camille-lefevre-demo", first_name: "Camille", company: "Atelier Data"}
+  - {linkedin: "thomas-mercier-demo", first_name: "Thomas", company: "Northwind Studio"}

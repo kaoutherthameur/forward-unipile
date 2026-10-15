@@ -1,0 +1,6 @@
+# G2 - Enrichissement CRM automatique
+with_company: false   # true = récupère aussi l'entreprise (1 appel de plus / profil)
+profiles:
+  - camille-lefevre-demo
+  - https://www.linkedin.com/in/thomas-mercier-demo
+output_path: examples/enrichissement-crm.csv

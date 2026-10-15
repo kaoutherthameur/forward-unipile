@@ -1,0 +1,27 @@
+# C3 - Séquence d'onboarding post-achat (WhatsApp)
+# Compte WhatsApp PERSO connecté à Unipile (QR). Envoi opt-in : le client vient
+# d'acheter et attend un suivi.
+# Séquence : J0 (bienvenue), J+2 (conseil), J+7 (check).
+# Idempotence : clé (client, étape). already_sent liste les clés déjà émises.
+# En prod, les clients sont alimentés par votre outil d'achat / CRM.
+clients:
+  - client_id: "CLIENT_DEMO_1"
+    chat_id: "CHAT_DEMO_ONB_1"
+    country: FR
+    signup_at: "2026-07-15T08:00:00Z"   # acheté aujourd'hui -> étape J0
+    messages:
+      "J0": "Bienvenue Julie ! Ravi de vous compter parmi nous. Je reste joignable ici si besoin."
+      "J+2": "Bonjour Julie, un petit conseil pour bien démarrer : commencez par configurer votre espace, ça prend 5 minutes."
+      "J+7": "Bonjour Julie, une semaine déjà ! Tout se passe bien ? Dites-moi si je peux vous aider sur un point."
+  - client_id: "CLIENT_DEMO_2"
+    chat_id: "CHAT_DEMO_ONB_2"
+    country: FR
+    signup_at: "2026-07-13T08:00:00Z"   # acheté il y a 2 jours -> étape J+2
+    messages:
+      "J0": "Bienvenue Marc ! Merci de votre confiance."
+      "J+2": "Bonjour Marc, un conseil pour bien démarrer : n'hésitez pas à tester la fonction principale dès aujourd'hui."
+      "J+7": "Bonjour Marc, une semaine est passée. Tout est clair de votre côté ?"
+
+# Clés déjà envoyées (exemple : la bienvenue de Marc est déjà partie à J0).
+already_sent:
+  - "CLIENT_DEMO_2|J0"

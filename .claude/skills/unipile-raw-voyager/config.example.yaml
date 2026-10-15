@@ -1,0 +1,3 @@
+# S3 - Raw proxy Voyager (avancé)
+request_url: https://www.linkedin.com/voyager/api/identity/wvmpCards
+method: GET

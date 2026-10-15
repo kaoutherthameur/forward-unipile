@@ -1,0 +1,6 @@
+# D4 - Performance de vos posts
+# identifier: public_identifier LinkedIn à suivre (vide = votre compte connecté)
+identifier:
+days_window: 21        # ne garder que les posts publiés dans les N derniers jours
+max_posts: 50          # garde-fou de pagination
+output_path: examples/posts-performance.csv

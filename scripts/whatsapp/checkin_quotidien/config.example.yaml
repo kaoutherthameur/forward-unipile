@@ -1,0 +1,23 @@
+# E1 - Check-in quotidien WhatsApp aux coachés
+# Chaque matin (cron), envoie un check-in à chaque coaché OPT-IN ci-dessous.
+# ÉCRITURE : simulée par défaut (UNIPILE_DRY_RUN=1). Garde-fous plafond + fenêtre locale + jitter.
+# Rotation des templates par jour de l'année pour éviter la répétition mot pour mot.
+
+templates:
+  - "Salut {prenom} ! C'est fait, ton action du jour ? ({action})"
+  - "Coucou {prenom}, petit point du matin : où en es-tu sur {action} ?"
+  - "Hello {prenom} ! On avance sur {action} aujourd'hui ? Dis-moi tout."
+
+coaches:
+  - prenom: "Camille"
+    chat_id: "c-3001"      # id de conversation WhatsApp (opt-in confirmé)
+    country: "FR"
+    action_du_jour: "30 min de rédaction sur ton offre"
+  - prenom: "Thomas"
+    chat_id: "c-3002"
+    country: "FR"
+    action_du_jour: "appeler 3 prospects tièdes"
+  - prenom: "Sofia"
+    chat_id: "c-3003"
+    country: "BE"
+    action_du_jour: "publier ton post LinkedIn du jour"

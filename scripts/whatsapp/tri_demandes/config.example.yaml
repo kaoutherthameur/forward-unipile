@@ -1,0 +1,9 @@
+# A3 - Tri des demandes WhatsApp (SAV / commande / réservation / spam)
+# Évènement : message_received. classify() catégorise sur mots-clés, route_to() est un stub à câbler.
+# Lecture seule : aucun envoi WhatsApp, seulement du routage interne.
+# Messages sortants filtrés via UNIPILE_OWN_PROVIDER_IDS (env).
+destinations:                    # indicatif : où route_to() envoie chaque catégorie
+  sav: "file support"
+  commande: "outil commandes"
+  reservation: "agenda"
+  spam: "corbeille"

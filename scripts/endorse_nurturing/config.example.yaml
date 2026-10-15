@@ -1,0 +1,5 @@
+# E5 - Endorse de compétences (nurturing)
+# skill_id : id de la compétence à endosser (récupéré depuis le profil de la cible).
+targets:
+  - {member: "camille-lefevre-demo", skill_id: "SKILL_ID_DEMO_1"}
+  - {member: "thomas-mercier-demo", skill_id: "SKILL_ID_DEMO_2"}

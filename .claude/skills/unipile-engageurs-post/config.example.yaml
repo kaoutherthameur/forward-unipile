@@ -1,0 +1,5 @@
+# A4 - Engageurs d'un post LinkedIn
+post_url: https://www.linkedin.com/feed/update/urn:li:activity:7457342077836767232/
+include_reactions: true
+include_comments: true
+output_path: examples/engageurs-post.csv

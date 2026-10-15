@@ -1,0 +1,9 @@
+# E2 - Accountability WhatsApp (webhook message_received)
+# Le coaché répond son avancement -> classify_progress() classe (done/blocked/unclear),
+# coach_reply() renvoie une relance/encouragement, log_progress() historise.
+# ÉCRITURE : send_reply() envoie sur le fil. Simulée par défaut (UNIPILE_DRY_RUN=1).
+# Messages sortants filtrés via UNIPILE_OWN_PROVIDER_IDS (env).
+
+# Aucune liste de coachés ici : le webhook réagit à chaque message entrant.
+# coach_reply() est un stub déterministe -> remplacer par un appel LLM pour personnaliser.
+signature: "Ton coach"   # signature indicative, à intégrer dans vos relances si besoin

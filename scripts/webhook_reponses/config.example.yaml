@@ -1,0 +1,7 @@
+# F2 - Webhook réponses temps réel
+# Vos provider_id LinkedIn (pour ignorer vos propres messages sortants),
+# séparés par des virgules. En déploiement, les passer via la variable
+# d'environnement UNIPILE_OWN_PROVIDER_IDS (secret Modal).
+own_provider_ids: "ACoAA_your_own_provider_id"
+# Où notifier (à câbler dans notify()) : webhook Slack, email, etc.
+notify_target: "https://hooks.slack.com/services/XXX/YYY/ZZZ"

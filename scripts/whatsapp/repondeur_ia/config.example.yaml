@@ -1,0 +1,6 @@
+# A2 - Répondeur IA de 1er niveau (FAQ) sur WhatsApp
+# Évènement : message_received. answer_faq() répond sur mots-clés (horaires, prix, dispo, adresse),
+# sinon None -> escalade humaine via escalate() (stub).
+# ÉCRITURE : send_reply() envoie sur le fil. Simulé par défaut (UNIPILE_DRY_RUN=1).
+# Messages sortants filtrés via UNIPILE_OWN_PROVIDER_IDS (env).
+signature: "L'équipe Atelier des Lilas"   # signature indicative, à intégrer dans vos réponses si besoin

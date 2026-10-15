@@ -1,0 +1,4 @@
+linkedin,name,headline,location,country,network_distance,is_premium,follower_count,connections_count,email,public_identifier
+https://www.linkedin.com/in/camille-lefevre-demo,Camille Lefevre,"Fondatrice @ Atelier Data | J'aide les PME a structurer leur donnee",Lyon Metropolitan Area,FR,FIRST_DEGREE,True,6085,2139,camille@atelier-data-demo.fr,camille-lefevre-demo
+https://www.linkedin.com/in/thomas-mercier-demo,Thomas Mercier,"CEO @ Northwind Studio | Automatisation & IA pour cabinets de conseil",Greater Paris Metropolitan Region,FR,SECOND_DEGREE,False,3421,1788,,thomas-mercier-demo
+sofia-nguyen-demo,Sofia Nguyen,"Head of Ops @ Brightpath | Scaling B2B SaaS",Brussels,BE,THIRD_DEGREE,True,1204,902,,sofia-nguyen-demo

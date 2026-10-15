@@ -1,0 +1,22 @@
+# C5 - Relance de panier / réservation abandonné (WhatsApp)
+# Compte WhatsApp PERSO connecté à Unipile (QR). Envoi opt-in : le contact a
+# initié un achat / une réservation et vous a déjà écrit.
+# delay_hours : délai (en heures) après l'abandon avant le rappel unique.
+# Idempotence : clé (chat_id, event_id). already_sent liste les clés déjà émises.
+# En prod, les événements d'abandon sont poussés par votre boutique / système de
+# réservation (webhook -> base -> ce script).
+delay_hours: 4
+events:
+  - event_id: "PANIER_2026_07_15_A"
+    chat_id: "CHAT_DEMO_PANIER_1"
+    country: FR
+    abandoned_at: "2026-07-15T04:00:00Z"   # abandon il y a ~4h -> éligible
+    message: "Bonjour Inès, votre panier vous attend toujours ! Un doute sur un article ? Je réponds ici avec plaisir."
+  - event_id: "RESA_2026_07_15_B"
+    chat_id: "CHAT_DEMO_PANIER_2"
+    country: BE
+    abandoned_at: "2026-07-15T07:30:00Z"   # abandon il y a 1h -> pas encore éligible
+    message: "Bonjour Hugo, votre réservation n'est pas finalisée. Souhaitez-vous que je la confirme pour vous ?"
+
+# Clés déjà envoyées (exemple : rien pour l'instant).
+already_sent: []

@@ -1,0 +1,2 @@
+# B5 - Nettoyer les invitations en attente
+older_than_days: 21   # retirer les invitations en attente depuis plus de N jours

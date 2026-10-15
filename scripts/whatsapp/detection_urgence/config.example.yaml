@@ -1,0 +1,6 @@
+# A6 - Détection d'urgence / churn sur WhatsApp
+# Évènement : message_received. is_urgent() détecte des mots-clés de churn/urgence
+# (annuler, résilier, remboursement, déçu, urgent, inadmissible, ...), alert() est un stub à câbler.
+# Lecture seule : aucun envoi WhatsApp, seulement une alerte interne prioritaire.
+# Messages sortants filtrés via UNIPILE_OWN_PROVIDER_IDS (env).
+canal_alerte: "#urgences-support"   # indicatif : cible de alert() (Slack, CRM, SMS responsable)

@@ -1,0 +1,3 @@
+# F5 - Cycle de vie des messages
+# Évènements écoutés : message_read, message_delivered, message_reaction, message_edited, message_deleted
+# (aucune config requise au runtime ; à enregistrer via POST /webhooks)

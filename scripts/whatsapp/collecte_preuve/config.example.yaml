@@ -1,0 +1,23 @@
+# E5 - Rappel exercice + demande de preuve (photo/audio) sur WhatsApp
+# Chaque jour (cron), build_proof_request() compose le rappel + la demande de preuve.
+# ÉCRITURE : simulée par défaut (UNIPILE_DRY_RUN=1). Garde-fous plafond + fenêtre locale + jitter.
+# RÉCEPTION de la pièce jointe : via webhook (voir E2 accountability et A1/inbox temps réel).
+
+preuve_type: "photo_ou_audio"   # "photo", "audio" ou "photo_ou_audio" (valeur par défaut)
+
+coaches:
+  - prenom: "Camille"
+    chat_id: "c-3001"
+    country: "FR"
+    exercice_du_jour: "10 pompes + 5 min de respiration"
+    preuve_type: "photo"
+  - prenom: "Thomas"
+    chat_id: "c-3002"
+    country: "FR"
+    exercice_du_jour: "lire 10 pages de ton livre"
+    preuve_type: "audio"
+  - prenom: "Sofia"
+    chat_id: "c-3003"
+    country: "BE"
+    exercice_du_jour: "préparer ta boîte-repas de midi"
+    # preuve_type absent -> valeur par défaut (photo_ou_audio)

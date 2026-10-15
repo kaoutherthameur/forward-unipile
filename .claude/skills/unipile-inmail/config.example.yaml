@@ -1,0 +1,5 @@
+# B4 - InMail hors réseau
+recipient: camille-lefevre-demo
+subject: "Une idée pour structurer votre donnée"
+text: "Bonjour Camille, je vous écris car ..."
+linkedin_api: sales_navigator   # sales_navigator | recruiter

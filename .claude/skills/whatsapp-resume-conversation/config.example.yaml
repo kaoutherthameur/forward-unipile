@@ -1,0 +1,4 @@
+# A5 - Résumer un fil WhatsApp client (one-shot, lecture seule)
+chat_id: "c-8821"                # id du fil WhatsApp à résumer
+messages_a_lire: 50              # nombre de messages récents à récupérer
+output_path: examples/whatsapp-resume-conversation.md

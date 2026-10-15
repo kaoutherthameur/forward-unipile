@@ -1,0 +1,4 @@
+# F3 - Envoyer une pièce jointe en DM
+recipient: camille-lefevre-demo   # slug/URL ou chat_id
+text: "Voici le cas d'usage dont on parlait."
+attachment_path: ./ressource.pdf

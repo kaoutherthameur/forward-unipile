@@ -1,0 +1,7 @@
+# E4 - Journal de bord d'un coaché (WhatsApp), one-shot
+# Compile les réponses d'un coaché sur la semaine en un point de progression pour la séance.
+# LECTURE SEULE (GET /chats/{id}/messages). Aucun envoi.
+chat_id: "c-3001"          # conversation WhatsApp du coaché
+days: 7                     # fenêtre à compiler (jours en arrière)
+messages_max: 200           # plafond de messages à lire
+output_path: examples/whatsapp-journal-coache.md
